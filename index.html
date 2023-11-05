@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TailwindCSS-->
     <link href="/dist/output.css" rel="stylesheet" />
@@ -11,9 +12,52 @@
     <title>NikeDemo</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <p class="bg-blue-500 px-6 py-4 rounded-md">
-      This is a p tag with Tailwind
-    </p>
+    <main class="relative">
+      <nav>
+        <header class="padding-x py-8 z-10 w-full">
+          <nav class="flex justify-between items-center max-container">
+            <a href="/">
+              <img src="src/assets/images/header-logo.svg" alt="Logo" width="130" height="29" />
+            </a>
+            <ul class="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+              <li><a class="font-montserrat leading-normal text-lg text-slate-gray" href="#home">Home</a></li>
+              <li><a class="font-montserrat leading-normal text-lg text-slate-gray" href="#about-us">About Us</a></li>
+              <li><a class="font-montserrat leading-normal text-lg text-slate-gray" href="#products">Products</a></li>
+              <li>
+                <a class="font-montserrat leading-normal text-lg text-slate-gray" href="#contact-us">Contact Us</a>
+              </li>
+            </ul>
+            <div class="hidden max-lg:block">
+              <img src="src/assets/icons/hamburger.svg" width="25" height="25" alt="hamburger" />
+            </div>
+          </nav>
+        </header>
+      </nav>
+
+      <section class="xl:padding-1 wide:padding-r padding-b">
+        <hero></hero>
+      </section>
+      <section class="padding">
+        <popularProducts></popularProducts>
+      </section>
+      <section class="padding">
+        <superQuality></superQuality>
+      </section>
+      <section class="padding-x py-10">
+        <services></services>
+      </section>
+      <section class="padding">
+        <specialOffer></specialOffer>
+      </section>
+      <section class="bg-pale-blue padding">
+        <customerReviews></customerReviews>
+      </section>
+      <section class="padding-x sm:py-32 py-16 w-full">
+        <subscribe></subscribe>
+      </section>
+      <section class="bg-black padding-x padding-t pb-8">
+        <footer></footer>
+      </section>
+    </main>
   </body>
 </html>
